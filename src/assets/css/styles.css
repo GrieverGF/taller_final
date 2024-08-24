@@ -1,0 +1,112 @@
+/* Definición de colores */
+:root {
+    --color-rojo: #CC252C;
+    --color-gris-oscuro: #4C4C47;
+    --color-azul-grisaceo: #848FA5;
+    --color-rosa: #C14953;
+    --color-crema: #E5DCC5;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-crema);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-rojo);
+}
+
+p, ul, li {
+    color: var(--color-azul-grisaceo);
+}
+
+/* Estilos de botones */
+.btn-primary {
+    background-color: var(--color-rojo);
+    border-color: var(--color-rojo);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-rosa);
+    border-color: var(--color-rosa);
+}
+
+/* Enlaces */
+a {
+    color: var(--color-azul-grisaceo);
+}
+
+a:hover {
+    color: var(--color-rosa);
+}
+
+/* Fondos de sección */
+.bg-rojo {
+    background-color: var(--color-rojo);
+}
+
+.bg-gris-oscuro {
+    background-color: var(--color-gris-oscuro);
+}
+
+.bg-azul-grisaceo {
+    background-color: var(--color-azul-grisaceo);
+}
+
+.bg-rosa {
+    background-color: var(--color-rosa);
+}
+
+.bg-crema {
+    background-color: var(--color-crema);
+}
+
+/* Colores de texto */
+.text-rojo {
+    color: var(--color-rojo);
+}
+
+.text-gris-oscuro {
+    color: var(--color-gris-oscuro);
+}
+
+.text-azul-grisaceo {
+    color: var(--color-azul-grisaceo);
+}
+
+.text-rosa {
+    color: var(--color-rosa);
+}
+
+.text-crema {
+    color: var(--color-crema);
+}
+
+/* Bordes */
+.border-rojo {
+    border-color: var(--color-rojo);
+}
+
+.border-gris-oscuro {
+    border-color: var(--color-gris-oscuro);
+}
+
+.border-azul-grisaceo {
+    border-color: var(--color-azul-grisaceo);
+}
+
+.border-rosa {
+    border-color: var(--color-rosa);
+}
+
+.border-crema {
+    border-color: var(--color-crema);
+}
+
+/* Otros elementos */
+.navbar, .footer {
+    background-color: var(--color-rojo);
+    color: var(--color-crema);
+}

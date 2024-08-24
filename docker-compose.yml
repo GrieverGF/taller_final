@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: lavanderia_flamingo_web
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - lavanderia_net
+
+  db:
+    image: mysql:8.0
+    container_name: lavanderia_flamingo_db
+    environment:
+      MYSQL_DATABASE: lavanderia_flamingo
+      MYSQL_ROOT_PASSWORD: example_password
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./SQL/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - lavanderia_net
+
+networks:
+  lavanderia_net:
+    driver: bridge
+
+volumes:
+  db_data:
